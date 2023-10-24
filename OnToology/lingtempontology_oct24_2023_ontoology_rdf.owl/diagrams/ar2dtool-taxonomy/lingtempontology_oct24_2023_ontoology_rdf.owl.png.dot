@@ -1,0 +1,9 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "ns0:Example" "ns0:SemanticDomain" "ns0:TemperatureLexeme" "ns0:LanguageObject" ; /*classes style*/
+	"ns0:Example" -> "ns0:LanguageObject" [ label = "rdfs:subClassOf" ];
+	"ns0:temperature_ambient" -> "ns0:SemanticDomain" [ label = "rdfs:subClassOf" ];
+	"ns0:TemperatureLexeme" -> "ns0:LanguageObject" [ label = "rdfs:subClassOf" ];
+
+}
